@@ -40,7 +40,6 @@
 > **Cours interactif de Programmation Orientée Objet Python avec adaptation intelligente de la difficulté**
 
 
-
 ## 🎯 Ce qui rend ce cours unique
 
 **Même concept POO = 3 niveaux de difficulté différents** dans les questions et la validation. Le cours s'adapte intelligemment à votre niveau d'expérience !

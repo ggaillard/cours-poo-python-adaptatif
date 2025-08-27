@@ -88,19 +88,19 @@
 ## 🖼️ Démonstration visuelle
 
 <p align="center">
-   <img src="barres-progression.svg" alt="Barres de progression" width="500"/>
+   <img src="assets/svg/barres-progression.svg" alt="Barres de progression" width="500"/>
    <br><em>Barres de progression adaptatives</em>
 </p>
 <p align="center">
-   <img src="tableau-concepts.svg" alt="Tableau des concepts" width="500"/>
+   <img src="assets/svg/tableau-concepts.svg" alt="Tableau des concepts" width="500"/>
    <br><em>Tableau comparatif des concepts</em>
 </p>
 <p align="center">
-   <img src="exercice-interactif.svg" alt="Exercice interactif" width="500"/>
+   <img src="assets/svg/exercice-interactif.svg" alt="Exercice interactif" width="500"/>
    <br><em>Exercice interactif</em>
 </p>
 <p align="center">
-   <img src="selection-niveau.svg" alt="Sélection du niveau" width="500"/>
+   <img src="assets/svg/selection-niveau.svg" alt="Sélection du niveau" width="500"/>
    <br><em>Écran de sélection du niveau</em>
 </p>
 

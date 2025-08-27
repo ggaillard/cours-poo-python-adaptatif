@@ -1,0 +1,696 @@
+/* =================================
+   COMPOSANTS - COURS POO PYTHON
+   ================================= */
+
+/* Cartes de niveau */
+.level-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin: 30px 0;
+}
+
+.level-card {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    color: white;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.level-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(255,255,255,0.1), transparent);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.level-card:hover::before {
+    opacity: 1;
+}
+
+.level-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+.level-card.selected {
+    transform: scale(1.05);
+    box-shadow: 0 20px 40px rgba(102, 126, 234, 0.4);
+    border: 3px solid #667eea;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.level-card.selected::after {
+    content: '✓';
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: #00f260;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    animation: checkmark 0.5s ease;
+}
+
+@keyframes checkmark {
+    from { transform: scale(0) rotate(-180deg); }
+    to { transform: scale(1) rotate(0deg); }
+}
+
+.level-icon {
+    font-size: 4em;
+    margin-bottom: 15px;
+    display: block;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+}
+
+.level-card h3 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.level-difficulty {
+    margin: 15px 0;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.star {
+    font-size: 1.5em;
+    color: rgba(255,255,255,0.3);
+    transition: all 0.3s ease;
+}
+
+.star.active {
+    color: #ffd700;
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
+
+.level-card ul {
+    text-align: left;
+    margin: 20px 0;
+    padding-left: 20px;
+    list-style: none;
+}
+
+.level-card li {
+    margin: 8px 0;
+    font-size: 0.9em;
+    position: relative;
+    padding-left: 15px;
+}
+
+.level-card li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: rgba(255,255,255,0.8);
+    font-weight: bold;
+}
+
+.level-duration {
+    background: rgba(255,255,255,0.2);
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-weight: bold;
+    backdrop-filter: blur(5px);
+}
+
+/* Tableau de comparaison des concepts */
+.concept-comparison {
+    background: #f8f9ff;
+    border-radius: 15px;
+    padding: 25px;
+    margin: 30px 0;
+    border: 2px solid #e2e8f0;
+}
+
+.concept-comparison h3 {
+    color: #4a5568;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.3em;
+}
+
+.concept-table-container {
+    overflow-x: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.concept-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    font-size: 13px;
+    min-width: 800px;
+}
+
+.concept-table th {
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    color: white;
+    padding: 15px 10px;
+    text-align: center;
+    font-weight: bold;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.concept-table td {
+    padding: 12px 10px;
+    border-bottom: 1px solid #e2e8f0;
+    vertical-align: top;
+    transition: all 0.3s ease;
+}
+
+.concept-table td:first-child {
+    background: #f7fafc;
+    font-weight: bold;
+    color: #2d3748;
+    border-right: 2px solid #e2e8f0;
+    position: sticky;
+    left: 0;
+    z-index: 5;
+}
+
+.concept-table tr:hover {
+    background: rgba(102, 126, 234, 0.05);
+    transform: scale(1.01);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.concept-table tr:hover td:first-child {
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    color: white;
+}
+
+.concept-table .level-1 {
+    background: linear-gradient(135deg, #e6fffa 0%, #b2f5ea 100%);
+    border-left: 4px solid #38b2ac;
+}
+
+.concept-table .level-2 {
+    background: linear-gradient(135deg, #fef5e7 0%, #fbd38d 100%);
+    border-left: 4px solid #ed8936;
+}
+
+.concept-table .level-pro {
+    background: linear-gradient(135deg, #e3f2fd 0%, #90caf9 100%);
+    border-left: 4px solid #1976d2;
+}
+
+.concept-table .absent {
+    background: #f7fafc;
+    color: #a0aec0;
+    text-align: center;
+    font-style: italic;
+    border-left: 4px solid #e2e8f0;
+}
+
+.concept-table .difficulty {
+    font-size: 16px;
+    margin-bottom: 8px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.concept-table .concept-content {
+    font-size: 11px;
+    line-height: 1.4;
+}
+
+.concept-table .concept-content strong {
+    display: block;
+    margin-bottom: 5px;
+    color: #2d3748;
+    font-size: 12px;
+}
+
+.concept-table .concept-content code {
+    background: rgba(0,0,0,0.1);
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-size: 10px;
+    color: #1e293b;
+    display: block;
+    margin: 3px 0;
+    font-family: 'Courier New', monospace;
+}
+
+/* Guide de choix */
+.choice-guide {
+    background: #fff5f5;
+    border-radius: 15px;
+    padding: 25px;
+    margin: 30px 0;
+    border: 2px solid #fed7d7;
+}
+
+.choice-guide h3 {
+    color: #c53030;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.3em;
+}
+
+.choice-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.choice-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    border: 2px solid #e2e8f0;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.choice-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #48bb78, #38a169);
+    transition: height 0.3s ease;
+}
+
+.choice-card:nth-child(2)::before {
+    background: linear-gradient(90deg, #ed8936, #dd6b20);
+}
+
+.choice-card:nth-child(3)::before {
+    background: linear-gradient(90deg, #1976d2, #1565c0);
+}
+
+.choice-card:hover {
+    border-color: #667eea;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.choice-card:hover::before {
+    height: 8px;
+}
+
+.choice-icon {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 10px;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(-10px); }
+    60% { transform: translateY(-5px); }
+}
+
+.choice-card h4 {
+    color: #2d3748;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.choice-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.choice-card li {
+    padding: 5px 0;
+    position: relative;
+    padding-left: 20px;
+    color: #4a5568;
+    font-size: 13px;
+    transition: color 0.3s ease;
+}
+
+.choice-card li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #48bb78;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.difficulty-stats {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+    font-size: 11px;
+    color: #666;
+    flex-wrap: wrap;
+}
+
+.stat-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background: #f7fafc;
+    padding: 5px 8px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.stat-item:hover {
+    background: #edf2f7;
+}
+
+/* Informations de niveau */
+.level-info {
+    background: #fffbeb;
+    border: 2px solid #fbbf24;
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.level-info h4 {
+    color: #92400e;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.level-info p {
+    color: #744210;
+    font-size: 0.95em;
+}
+
+/* Progression des concepts */
+.concept-progression {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 15px;
+    padding: 25px;
+    margin: 30px 0;
+    color: white;
+}
+
+.concept-progression h3 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: white;
+    font-size: 1.3em;
+}
+
+.progression-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.progression-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.progression-card h4 {
+    color: white;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.concept-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.concept-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.concept-item:hover {
+    background: rgba(255,255,255,0.1);
+}
+
+.concept-name {
+    min-width: 120px;
+    font-size: 12px;
+    color: white;
+    font-weight: 500;
+}
+
+.progression-bar {
+    flex: 1;
+    height: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+}
+
+.progression-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #00f260, #0575e6);
+    border-radius: 4px;
+    transition: width 0.8s ease;
+    transform-origin: left;
+    transform: scaleX(0);
+}
+
+.progression-fill[data-levels="1"] { 
+    width: 33%; 
+    background: linear-gradient(90deg, #48bb78, #38a169);
+}
+.progression-fill[data-levels="2"] { 
+    width: 66%; 
+    background: linear-gradient(90deg, #ed8936, #dd6b20);
+}
+.progression-fill[data-levels="3"] { 
+    width: 100%; 
+    background: linear-gradient(90deg, #1976d2, #1565c0);
+}
+
+.progression-text {
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.8);
+    min-width: 60px;
+    text-align: center;
+}
+
+/* Tooltips */
+.concept-tooltip {
+    position: absolute;
+    background: #2d3748;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 12px;
+    max-width: 300px;
+    z-index: 1000;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+.concept-tooltip.show {
+    opacity: 1;
+}
+
+.concept-tooltip::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 8px solid transparent;
+    border-top-color: #2d3748;
+}
+
+.concept-tooltip h6 {
+    color: #90cdf4;
+    margin-bottom: 8px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+/* Modales */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+    backdrop-filter: blur(5px);
+    animation: modalFadeIn 0.3s ease;
+}
+
+@keyframes modalFadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.modal-content {
+    background: white;
+    border-radius: 15px;
+    max-width: 600px;
+    max-height: 80vh;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    animation: modalSlideIn 0.3s ease;
+}
+
+@keyframes modalSlideIn {
+    from { transform: scale(0.8) translateY(-50px); opacity: 0; }
+    to { transform: scale(1) translateY(0); opacity: 1; }
+}
+
+.modal-header {
+    padding: 20px 25px;
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-header h3 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.modal-close {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background 0.3s ease;
+}
+
+.modal-close:hover {
+    background: rgba(255,255,255,0.2);
+}
+
+.modal-body {
+    padding: 25px;
+    overflow-y: auto;
+    max-height: 60vh;
+}
+
+.modal-footer {
+    padding: 15px 25px;
+    background: #f8f9fa;
+    text-align: right;
+    border-top: 1px solid #e2e8f0;
+}
+
+/* Animations de particules */
+.particle {
+    position: fixed;
+    width: 4px;
+    height: 4px;
+    background: #ffd700;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 10000;
+}
+
+/* Légende des niveaux */
+.difficulty-legend {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 20px 0;
+    padding: 15px;
+    background: rgba(255,255,255,0.8);
+    border-radius: 10px;
+    flex-wrap: wrap;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    color: #4a5568;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.legend-item:hover {
+    background: rgba(102, 126, 234, 0.1);
+}
+
+.legend-icon {
+    font-size: 16px;
+}
+
+/* États d'interaction */
+.concept-row {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.level-card,
+.choice-card {
+    user-select: none;
+}
+
+/* Améliorations d'accessibilité */
+.level-card:focus,
+.choice-card:focus,
+.concept-row:focus {
+    outline: 3px solid #667eea;
+    outline-offset: 2px;
+}

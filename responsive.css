@@ -1,0 +1,851 @@
+/* =================================
+   RESPONSIVE DESIGN - COURS POO PYTHON
+   ================================= */
+
+/* Large screens (1200px et plus) */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+    }
+    
+    .header h1 {
+        font-size: 3em;
+    }
+    
+    .level-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .concept-table {
+        font-size: 14px;
+    }
+    
+    .step-title {
+        font-size: 1.8em;
+    }
+}
+
+/* Medium screens (768px - 1199px) */
+@media (max-width: 1199px) and (min-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+    
+    .header h1 {
+        font-size: 2.2em;
+    }
+    
+    .level-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
+    .level-card {
+        padding: 25px;
+    }
+    
+    .concept-table {
+        font-size: 12px;
+    }
+    
+    .concept-table th,
+    .concept-table td {
+        padding: 10px 8px;
+    }
+    
+    .choice-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+    
+    .progression-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Small screens (576px - 767px) */
+@media (max-width: 767px) and (min-width: 576px) {
+    .container {
+        padding: 10px;
+    }
+    
+    .header {
+        margin-bottom: 20px;
+    }
+    
+    .header h1 {
+        font-size: 1.8em;
+        margin-bottom: 5px;
+    }
+    
+    .header p {
+        font-size: 0.9em;
+    }
+    
+    .course-content {
+        padding: 20px;
+        border-radius: 10px;
+    }
+    
+    .step-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+    
+    .step-number {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    
+    .step-title {
+        font-size: 1.2em;
+    }
+    
+    .level-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .level-card {
+        padding: 20px;
+        border-radius: 15px;
+    }
+    
+    .level-card h3 {
+        font-size: 1.5em;
+    }
+    
+    .level-icon {
+        font-size: 3em;
+    }
+    
+    .concept-table {
+        font-size: 10px;
+        min-width: 600px;
+    }
+    
+    .concept-table th,
+    .concept-table td {
+        padding: 8px 5px;
+    }
+    
+    .concept-table td:first-child {
+        width: 100px;
+        font-size: 9px;
+    }
+    
+    .concept-table .concept-content {
+        font-size: 9px;
+    }
+    
+    .concept-table .concept-content code {
+        font-size: 7px;
+        padding: 1px 2px;
+        margin: 1px 0;
+    }
+    
+    .choice-card {
+        padding: 12px;
+        margin-bottom: 12px;
+    }
+    
+    .choice-icon {
+        font-size: 2em;
+        margin-bottom: 8px;
+    }
+    
+    .choice-card h4 {
+        font-size: 1em;
+        margin-bottom: 10px;
+    }
+    
+    .choice-card li {
+        font-size: 11px;
+        padding: 3px 0;
+        padding-left: 15px;
+    }
+    
+    .difficulty-stats {
+        gap: 5px;
+        font-size: 9px;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .stat-item {
+        padding: 3px 6px;
+        font-size: 9px;
+    }
+    
+    .progression-card {
+        padding: 12px;
+    }
+    
+    .progression-card h4 {
+        font-size: 1em;
+        margin-bottom: 10px;
+    }
+    
+    .concept-item {
+        padding: 6px;
+        gap: 8px;
+    }
+    
+    .concept-name {
+        min-width: 100px;
+        font-size: 10px;
+    }
+    
+    .progression-bar {
+        height: 6px;
+    }
+    
+    .progression-text {
+        font-size: 9px;
+        min-width: 50px;
+    }
+    
+    .step-indicator {
+        font-size: 9px;
+        gap: 3px;
+    }
+    
+    .step {
+        min-width: 40px;
+        padding: 3px;
+    }
+    
+    .navigation {
+        margin-top: 20px;
+        padding-top: 15px;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .completion-indicator {
+        order: -1;
+        font-size: 11px;
+        margin: 0;
+    }
+    
+    .btn {
+        padding: 6px 12px;
+        font-size: 11px;
+        margin: 3px;
+    }
+    
+    .btn-small {
+        padding: 5px 10px;
+        font-size: 10px;
+    }
+    
+    .btn-level {
+        padding: 10px 15px;
+        font-size: 14px;
+        margin: 10px 5px;
+        border-radius: 20px;
+    }
+    
+    .badges-preview {
+        gap: 3px;
+        margin: 15px 0;
+    }
+    
+    .badge-mini {
+        font-size: 8px;
+        padding: 2px 5px;
+        border-radius: 10px;
+    }
+    
+    .code-container {
+        padding: 10px;
+        margin: 10px 0;
+    }
+    
+    .code-container pre {
+        font-size: 11px;
+        line-height: 1.3;
+    }
+    
+    .code-input {
+        font-size: 11px;
+        padding: 8px;
+        min-height: 50px;
+    }
+    
+    .result {
+        padding: 8px;
+        font-size: 11px;
+        margin-top: 8px;
+    }
+    
+    .hint {
+        padding: 8px;
+        font-size: 11px;
+        margin: 8px 0;
+    }
+    
+    .difficulty-indicator {
+        margin-bottom: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .difficulty-star {
+        font-size: 1em;
+        margin: 0 1px;
+    }
+    
+    .challenge {
+        padding: 15px;
+    }
+    
+    .challenge h3 {
+        font-size: 1.1em;
+        margin-bottom: 10px;
+    }
+    
+    .challenge ol {
+        padding-left: 20px;
+    }
+    
+    .challenge li {
+        font-size: 0.85em;
+        margin: 5px 0;
+    }
+    
+    .level-info {
+        padding: 15px;
+        margin-top: 20px;
+    }
+    
+    .level-info h4 {
+        font-size: 1em;
+        margin-bottom: 8px;
+    }
+    
+    .level-info p {
+        font-size: 0.85em;
+    }
+    
+    .concept-comparison {
+        padding: 15px;
+        margin: 20px 0;
+    }
+    
+    .concept-comparison h3 {
+        font-size: 1.1em;
+        margin-bottom: 15px;
+    }
+    
+    .concept-progression {
+        padding: 15px;
+        margin: 20px 0;
+    }
+    
+    .concept-progression h3 {
+        font-size: 1.1em;
+        margin-bottom: 15px;
+    }
+    
+    .choice-guide {
+        padding: 15px;
+        margin: 20px 0;
+    }
+    
+    .choice-guide h3 {
+        font-size: 1.1em;
+        margin-bottom: 15px;
+    }
+    
+    .difficulty-legend {
+        padding: 10px;
+        gap: 8px;
+        flex-direction: column;
+    }
+    
+    .legend-item {
+        font-size: 9px;
+        gap: 5px;
+        padding: 3px 6px;
+    }
+    
+    .legend-icon {
+        font-size: 12px;
+    }
+}
+
+/* Landscape orientation pour mobiles */
+@media (max-height: 500px) and (orientation: landscape) {
+    .header {
+        margin-bottom: 10px;
+    }
+    
+    .header h1 {
+        font-size: 1.3em;
+        margin-bottom: 5px;
+    }
+    
+    .course-content {
+        padding: 15px;
+    }
+    
+    .step-header {
+        margin-bottom: 10px;
+        padding-bottom: 8px;
+    }
+    
+    .concept-intro,
+    .observation,
+    .example-box,
+    .micro-challenge {
+        margin: 8px 0;
+        padding: 10px;
+    }
+    
+    .level-card {
+        padding: 10px;
+    }
+    
+    .level-icon {
+        font-size: 2em;
+        margin-bottom: 5px;
+    }
+    
+    .navigation {
+        margin-top: 15px;
+        padding-top: 10px;
+    }
+}
+
+/* Réglages pour écrans haute densité */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .step-number,
+    .level-icon,
+    .difficulty-star {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    
+    .concept-table {
+        border-collapse: separate;
+        border-spacing: 1px;
+    }
+    
+    .btn,
+    .level-card,
+    .choice-card {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+    }
+}
+
+/* Améliorations pour les écrans tactiles */
+@media (hover: none) and (pointer: coarse) {
+    .level-card,
+    .choice-card,
+    .concept-row {
+        cursor: default;
+    }
+    
+    .level-card:hover,
+    .choice-card:hover,
+    .concept-row:hover {
+        transform: none;
+        box-shadow: initial;
+    }
+    
+    .level-card:active,
+    .choice-card:active {
+        transform: scale(0.98);
+    }
+    
+    .btn:hover {
+        transform: none;
+    }
+    
+    .btn:active {
+        transform: scale(0.95);
+    }
+    
+    /* Augmenter la taille des zones tactiles */
+    .btn {
+        min-height: 44px;
+        min-width: 44px;
+    }
+    
+    .btn-small {
+        min-height: 36px;
+        min-width: 36px;
+    }
+    
+    .step {
+        min-height: 44px;
+        min-width: 44px;
+    }
+    
+    /* Espacement plus important pour éviter les clics accidentels */
+    .navigation {
+        gap: 20px;
+    }
+    
+    .badges-preview {
+        gap: 8px;
+    }
+    
+    .step-indicator {
+        gap: 8px;
+    }
+}
+
+/* Optimisations pour l'impression */
+@media print {
+    body {
+        background: white;
+        color: black;
+    }
+    
+    .header,
+    .progress-container,
+    .navigation,
+    .btn,
+    .badges-preview {
+        display: none;
+    }
+    
+    .course-content {
+        background: white;
+        box-shadow: none;
+        padding: 0;
+    }
+    
+    .step-content {
+        display: block !important;
+        page-break-inside: avoid;
+        margin-bottom: 30px;
+    }
+    
+    .concept-table {
+        page-break-inside: avoid;
+    }
+    
+    .code-container {
+        background: #f5f5f5;
+        border: 1px solid #ccc;
+    }
+    
+    .code-container pre {
+        color: black;
+    }
+}
+
+/* Préférences d'accessibilité */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    .level-icon,
+    .choice-icon {
+        animation: none;
+    }
+    
+    .step-content {
+        animation: none;
+    }
+    
+    .progression-fill {
+        transition: none;
+    }
+}
+
+@media (prefers-contrast: high) {
+    .btn {
+        border: 2px solid white;
+    }
+    
+    .level-card,
+    .choice-card {
+        border: 2px solid white;
+    }
+    
+    .concept-table th {
+        border: 1px solid white;
+    }
+    
+    .result.success {
+        border: 2px solid #22543d;
+    }
+    
+    .result.error {
+        border: 2px solid #742a2a;
+    }
+}
+
+/* Support pour les modes sombres système */
+@media (prefers-color-scheme: dark) {
+    .course-content {
+        background: #2d3748;
+        color: #e2e8f0;
+    }
+    
+    .concept-table {
+        background: #2d3748;
+        color: #e2e8f0;
+    }
+    
+    .concept-table td:first-child {
+        background: #4a5568;
+        color: #e2e8f0;
+    }
+    
+    .choice-card,
+    .progression-card {
+        background: #2d3748;
+        color: #e2e8f0;
+        border-color: #4a5568;
+    }
+    
+    .code-input {
+        background: #1a202c;
+        color: #e2e8f0;
+        border-color: #4a5568;
+    }
+    
+    .modal-content {
+        background: #2d3748;
+        color: #e2e8f0;
+    }
+    
+    .modal-footer {
+        background: #4a5568;
+    }
+}-size: 8px;
+        margin: 1px 0;
+    }
+    
+    .choice-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .choice-card {
+        padding: 15px;
+    }
+    
+    .progression-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .progression-card {
+        padding: 15px;
+    }
+    
+    .difficulty-legend {
+        gap: 15px;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .legend-item {
+        font-size: 10px;
+    }
+    
+    .step-indicator {
+        font-size: 10px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .step {
+        min-width: 50px;
+        margin: 2px;
+    }
+    
+    .navigation {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .completion-indicator {
+        order: -1;
+        font-size: 12px;
+    }
+    
+    .badges-preview {
+        gap: 5px;
+    }
+    
+    .badge-mini {
+        font-size: 9px;
+        padding: 3px 6px;
+    }
+    
+    .code-input {
+        font-size: 12px;
+        min-height: 60px;
+    }
+    
+    .micro-challenge {
+        padding: 10px;
+    }
+    
+    .micro-challenge h4 {
+        font-size: 1em;
+    }
+    
+    .btn {
+        padding: 8px 15px;
+        font-size: 12px;
+    }
+    
+    .btn-level {
+        padding: 12px 20px;
+        font-size: 16px;
+        margin: 15px 5px;
+    }
+}
+
+/* Extra small screens (moins de 576px) */
+@media (max-width: 575px) {
+    .container {
+        padding: 5px;
+    }
+    
+    .header {
+        margin-bottom: 15px;
+        padding: 10px;
+    }
+    
+    .header h1 {
+        font-size: 1.5em;
+        line-height: 1.2;
+    }
+    
+    .header p {
+        font-size: 0.8em;
+    }
+    
+    .progress-container {
+        padding: 10px;
+        margin-bottom: 15px;
+    }
+    
+    .course-content {
+        padding: 15px;
+        border-radius: 8px;
+        margin-bottom: 15px;
+    }
+    
+    .step-header {
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 15px;
+        padding-bottom: 10px;
+    }
+    
+    .step-number {
+        width: 35px;
+        height: 35px;
+        font-size: 1em;
+        margin: 0 0 8px 0;
+    }
+    
+    .step-title {
+        font-size: 1.1em;
+        line-height: 1.3;
+    }
+    
+    .concept-intro,
+    .observation,
+    .example-box,
+    .micro-challenge,
+    .challenge {
+        padding: 12px;
+        margin: 12px 0;
+    }
+    
+    .concept-intro h3,
+    .observation h4,
+    .example-box h4,
+    .micro-challenge h4 {
+        font-size: 0.95em;
+        margin-bottom: 8px;
+    }
+    
+    .level-card {
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+    
+    .level-card h3 {
+        font-size: 1.3em;
+        margin-bottom: 10px;
+    }
+    
+    .level-icon {
+        font-size: 2.5em;
+        margin-bottom: 10px;
+    }
+    
+    .level-card ul {
+        margin: 15px 0;
+        padding-left: 15px;
+    }
+    
+    .level-card li {
+        font-size: 0.8em;
+        margin: 6px 0;
+    }
+    
+    .level-duration {
+        padding: 8px;
+        margin-top: 15px;
+        font-size: 0.85em;
+    }
+    
+    .star {
+        font-size: 1.2em;
+    }
+    
+    .concept-table-container {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    .concept-table {
+        font-size: 9px;
+        min-width: 500px;
+    }
+    
+    .concept-table th,
+    .concept-table td {
+        padding: 6px 4px;
+    }
+    
+    .concept-table td:first-child {
+        width: 80px;
+        font-size: 8px;
+    }
+    
+    .concept-table .difficulty {
+        font-size: 12px;
+        margin-bottom: 4px;
+    }
+    
+    .concept-table .concept-content {
+        font-size: 8px;
+        line-height: 1.2;
+    }
+    
+    .concept-table .concept-content strong {
+        font-size: 9px;
+        margin-bottom: 3px;
+    }
+    
+    .concept-table .concept-content code {
+        font

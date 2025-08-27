@@ -1,3 +1,17 @@
+# 🎨 Aperçu du cours
+
+### Sélection de niveau adaptatif
+![Sélection niveau](selection-niveau.svg)
+
+### Tableau interactif des concepts
+![Tableau concepts](tableau-concepts.svg)
+
+### Exercices avec validation temps réel
+![Exercice interactif](exercice-interactif.svg)
+
+### Progression adaptative par difficulté
+![Barres progression](barres-progression.svg)
+
 # 🐍 Cours POO Python Adaptatif
 
 > **Cours interactif de Programmation Orientée Objet Python avec adaptation intelligente de la difficulté**
@@ -56,6 +70,31 @@
 - +3 concepts professionnels exclusifs (design patterns, tests unitaires, architecture)
 - Scénario métier professionnel : Système de gestion de bibliothèque
 - **Sans indices** - validation experte
+
+
+## 🖼️ Démonstration visuelle
+
+Voici quelques captures d'écran et schémas illustrant l'interface et les fonctionnalités :
+
+<p align="center">
+   <img src="barres-progression.svg" alt="Barres de progression" width="500"/>
+   <br><em>Barres de progression adaptatives</em>
+</p>
+
+<p align="center">
+   <img src="tableau-concepts.svg" alt="Tableau des concepts" width="500"/>
+   <br><em>Tableau comparatif des concepts</em>
+</p>
+
+<p align="center">
+   <img src="exercice-interactif.svg" alt="Exercice interactif" width="500"/>
+   <br><em>Exercice interactif</em>
+</p>
+
+<p align="center">
+   <img src="selection-niveau.svg" alt="Sélection du niveau" width="500"/>
+   <br><em>Écran de sélection du niveau</em>
+</p>
 
 ## 🚀 Démarrage rapide
 

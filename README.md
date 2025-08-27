@@ -1,4 +1,26 @@
-# 🎨 Aperçu du cours
+# 🚀 [Accéder au cours en ligne](https://ggaillard.github.io/cours-poo-python-adaptatif/)
+
+# 🐍 Cours POO Python Adaptatif
+
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)](https://developer.mozilla.org/fr/docs/Web/HTML)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)](https://developer.mozilla.org/fr/docs/Web/JavaScript)
+[![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)](https://www.python.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+---
+
+## 🗂️ Sommaire
+
+- [Aperçu du cours](#aperçu-du-cours)
+- [Ce qui rend ce cours unique](#ce-qui-rend-ce-cours-unique)
+- [Fonctionnalités principales](#fonctionnalités-principales)
+- [Parcours d'apprentissage](#parcours-dapprentissage)
+- [Démonstration visuelle](#démonstration-visuelle)
+- [Démarrage rapide](#démarrage-rapide)
+
+---
+
+## 🎨 Aperçu du cours
 
 ### Sélection de niveau adaptatif
 ![Sélection niveau](selection-niveau.svg)
@@ -12,14 +34,12 @@
 ### Progression adaptative par difficulté
 ![Barres progression](barres-progression.svg)
 
-# 🐍 Cours POO Python Adaptatif
+---
+
 
 > **Cours interactif de Programmation Orientée Objet Python avec adaptation intelligente de la difficulté**
 
-[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)](https://developer.mozilla.org/fr/docs/Web/HTML)
-[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)](https://developer.mozilla.org/fr/docs/Web/JavaScript)
-[![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)](https://www.python.org/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 
 ## 🎯 Ce qui rend ce cours unique
 
@@ -72,25 +92,21 @@
 - **Sans indices** - validation experte
 
 
-## 🖼️ Démonstration visuelle
 
-Voici quelques captures d'écran et schémas illustrant l'interface et les fonctionnalités :
+## 🖼️ Démonstration visuelle
 
 <p align="center">
    <img src="barres-progression.svg" alt="Barres de progression" width="500"/>
    <br><em>Barres de progression adaptatives</em>
 </p>
-
 <p align="center">
    <img src="tableau-concepts.svg" alt="Tableau des concepts" width="500"/>
    <br><em>Tableau comparatif des concepts</em>
 </p>
-
 <p align="center">
    <img src="exercice-interactif.svg" alt="Exercice interactif" width="500"/>
    <br><em>Exercice interactif</em>
 </p>
-
 <p align="center">
    <img src="selection-niveau.svg" alt="Sélection du niveau" width="500"/>
    <br><em>Écran de sélection du niveau</em>

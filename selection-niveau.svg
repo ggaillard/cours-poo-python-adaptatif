@@ -1,0 +1,140 @@
+<svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="cardGradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f093fb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f5576c;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="cardGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4facfe;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00f2fe;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="cardGradient3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#43e97b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#38f9d7;stop-opacity:1" />
+    </linearGradient>
+    
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="800" fill="url(#bgGradient)"/>
+  
+  <!-- Header -->
+  <text x="600" y="80" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="36" font-weight="bold">
+    🐍 Cours Progressif POO Python
+  </text>
+  <text x="600" y="120" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-family="Arial, sans-serif" font-size="18">
+    Apprenez étape par étape, du plus simple au plus complexe
+  </text>
+  
+  <!-- Main container -->
+  <rect x="100" y="160" width="1000" height="580" rx="15" fill="white" filter="url(#shadow)"/>
+  
+  <!-- Title section -->
+  <text x="150" y="220" fill="#4a5568" font-family="Arial, sans-serif" font-size="24" font-weight="bold">
+    🎯 Choisissez votre niveau
+  </text>
+  <text x="150" y="250" fill="#666" font-family="Arial, sans-serif" font-size="16">
+    Sélectionnez le niveau qui correspond le mieux à votre expérience en programmation
+  </text>
+  
+  <!-- Level cards -->
+  <!-- Beginner card -->
+  <rect x="150" y="290" width="280" height="380" rx="20" fill="url(#cardGradient1)" filter="url(#shadow)"/>
+  <text x="290" y="340" text-anchor="middle" fill="white" font-size="48">🌱</text>
+  <text x="290" y="380" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="24" font-weight="bold">Débutant</text>
+  
+  <!-- Stars -->
+  <text x="260" y="410" fill="#ffd700" font-size="20">⭐</text>
+  <text x="280" y="410" fill="rgba(255,255,255,0.3)" font-size="20">⭐</text>
+  <text x="300" y="410" fill="rgba(255,255,255,0.3)" font-size="20">⭐</text>
+  
+  <text x="290" y="440" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="14" font-weight="bold">
+    Pour qui : Première fois en programmation
+  </text>
+  
+  <!-- Features list -->
+  <text x="170" y="470" fill="white" font-family="Arial, sans-serif" font-size="12">• Explications très détaillées</text>
+  <text x="170" y="490" fill="white" font-family="Arial, sans-serif" font-size="12">• Analogies du quotidien</text>
+  <text x="170" y="510" fill="white" font-family="Arial, sans-serif" font-size="12">• Exercices guidés</text>
+  <text x="170" y="530" fill="white" font-family="Arial, sans-serif" font-size="12">• 8 étapes progressives</text>
+  
+  <!-- Duration -->
+  <rect x="170" y="560" width="200" height="30" rx="10" fill="rgba(255,255,255,0.2)"/>
+  <text x="270" y="580" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold">
+    ⏱️ 45 minutes
+  </text>
+  
+  <!-- Intermediate card -->
+  <rect x="460" y="290" width="280" height="380" rx="20" fill="url(#cardGradient2)" filter="url(#shadow)"/>
+  <text x="600" y="340" text-anchor="middle" fill="white" font-size="48">🚀</text>
+  <text x="600" y="380" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="24" font-weight="bold">Intermédiaire</text>
+  
+  <!-- Stars -->
+  <text x="570" y="410" fill="#ffd700" font-size="20">⭐</text>
+  <text x="590" y="410" fill="#ffd700" font-size="20">⭐</text>
+  <text x="610" y="410" fill="rgba(255,255,255,0.3)" font-size="20">⭐</text>
+  
+  <text x="600" y="440" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="14" font-weight="bold">
+    Pour qui : Connaît déjà un langage
+  </text>
+  
+  <!-- Features list -->
+  <text x="480" y="470" fill="white" font-family="Arial, sans-serif" font-size="12">• Concepts POO approfondis</text>
+  <text x="480" y="490" fill="white" font-family="Arial, sans-serif" font-size="12">• Méthodes spéciales Python</text>
+  <text x="480" y="510" fill="white" font-family="Arial, sans-serif" font-size="12">• Properties et validation</text>
+  <text x="480" y="530" fill="white" font-family="Arial, sans-serif" font-size="12">• 12 étapes avec défis</text>
+  
+  <!-- Duration -->
+  <rect x="480" y="560" width="200" height="30" rx="10" fill="rgba(255,255,255,0.2)"/>
+  <text x="580" y="580" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold">
+    ⏱️ 75 minutes
+  </text>
+  
+  <!-- Advanced card -->
+  <rect x="770" y="290" width="280" height="380" rx="20" fill="url(#cardGradient3)" filter="url(#shadow)"/>
+  <text x="910" y="340" text-anchor="middle" fill="white" font-size="48">🎓</text>
+  <text x="910" y="380" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="22" font-weight="bold">Avancé - BTS SLAM</text>
+  
+  <!-- Stars -->
+  <text x="880" y="410" fill="#ffd700" font-size="20">⭐</text>
+  <text x="900" y="410" fill="#ffd700" font-size="20">⭐</text>
+  <text x="920" y="410" fill="#ffd700" font-size="20">⭐</text>
+  
+  <text x="910" y="440" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="14" font-weight="bold">
+    Pour qui : Étudiants BTS SLAM
+  </text>
+  
+  <!-- Features list -->
+  <text x="790" y="470" fill="white" font-family="Arial, sans-serif" font-size="12">• Patterns professionnels</text>
+  <text x="790" y="490" fill="white" font-family="Arial, sans-serif" font-size="12">• Projet métier complet</text>
+  <text x="790" y="510" fill="white" font-family="Arial, sans-serif" font-size="12">• Tests et documentation</text>
+  <text x="790" y="530" fill="white" font-family="Arial, sans-serif" font-size="12">• 15 étapes + évaluation</text>
+  
+  <!-- Duration -->
+  <rect x="790" y="560" width="200" height="30" rx="10" fill="rgba(255,255,255,0.2)"/>
+  <text x="890" y="580" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold">
+    ⏱️ 120 minutes
+  </text>
+  
+  <!-- Selected card indicator (intermediate selected) -->
+  <rect x="455" y="285" width="290" height="390" rx="25" fill="none" stroke="#667eea" stroke-width="4" stroke-dasharray="10,5">
+    <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
+  </rect>
+  
+  <!-- Start button -->
+  <rect x="480" y="700" width="240" height="45" rx="25" fill="linear-gradient(45deg, #00f260, #0575e6)" filter="url(#shadow)"/>
+  <text x="600" y="730" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="16" font-weight="bold">
+    🚀 Commencer le niveau INTERMÉDIAIRE
+  </text>
+</svg>

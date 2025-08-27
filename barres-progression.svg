@@ -1,0 +1,313 @@
+<svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="cardGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:rgba(255,255,255,0.1);stop-opacity:1" />
+      <stop offset="100%" style="stop-color:rgba(255,255,255,0.05);stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="progressGreen" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#48bb78;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#38a169;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="progressOrange" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ed8936;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#dd6b20;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="progressBlue" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1976d2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1565c0;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="progressPurple" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7c3aed;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#5b21b6;stop-opacity:1" />
+    </linearGradient>
+    
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.2"/>
+    </filter>
+    
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="800" fill="url(#bgGradient)"/>
+  
+  <!-- Title -->
+  <text x="600" y="50" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="28" font-weight="bold">
+    📈 Progression avec 3 niveaux de difficulté
+  </text>
+  <text x="600" y="80" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-family="Arial, sans-serif" font-size="14">
+    Les concepts fondamentaux et intermédiaires évoluent sur 3 niveaux de difficulté dans les questions
+  </text>
+  
+  <!-- Main container -->
+  <rect x="50" y="110" width="1100" height="650" rx="15" fill="rgba(255,255,255,0.1)" filter="url(#shadow)"/>
+  
+  <!-- Cards container -->
+  <g transform="translate(80, 150)">
+    
+    <!-- Card 1: Concepts Fondamentaux -->
+    <rect x="0" y="0" width="340" height="480" rx="10" fill="url(#cardGradient)" filter="url(#shadow)"/>
+    <text x="170" y="40" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="18" font-weight="bold">🧱 Concepts Fondamentaux</text>
+    <text x="170" y="65" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-family="Arial, sans-serif" font-size="11">Questions adaptées : ⭐ → ⭐⭐ → ⭐⭐⭐</text>
+    
+    <!-- Progress item 1: Classes & Objets -->
+    <text x="20" y="110" fill="white" font-family="Arial, sans-serif" font-size="12">Classes & Objets</text>
+    <rect x="20" y="120" width="250" height="12" rx="6" fill="rgba(255,255,255,0.2)"/>
+    <rect x="20" y="120" width="250" height="12" rx="6" fill="url(#progressBlue)">
+      <animate attributeName="width" values="0;250" dur="2s" fill="freeze"/>
+    </rect>
+    
+    <!-- Difficulty markers -->
+    <circle cx="103" cy="126" r="3" fill="#48bb78">
+      <animate attributeName="r" values="2;4;2" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <text x="103" y="130" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="8">⭐</text>
+    
+    <circle cx="186" cy="126" r="3" fill="#ed8936">
+      <animate attributeName="r" values="2;4;2" dur="2s" begin="0.5s" repeatCount="indefinite"/>
+    </circle>
+    <text x="186" y="130" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="8">⭐⭐</text>
+    
+    <circle cx="269" cy="126" r="3" fill="#1976d2">
+      <animate attributeName="r" values="2;4;2" dur="2s" begin="1s" repeatCount="indefinite"/>
+    </circle>
+    <text x="269" y="130" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="8">⭐⭐⭐</text>
+    
+    <text x="290" y="130" fill="rgba(255,255,255,0.8)" font-family="Arial, sans-serif" font-size="10">3 difficultés</text>
+    
+    <!-- Progress item 2: Constructeurs -->
+    <text x="20" y="170" fill="white" font-family="Arial, sans-serif" font-size="12">Constructeurs</text>
+    <rect x="20" y="180" width="250" height="12" rx="6" fill="rgba(255,255,255,0.2)"/>
+    <rect x="20" y="180" width="250" height="12" rx="6" fill="url(#progressBlue)">
+      <animate attributeName="width" values="0;250" dur="2s" begin="0.3s" fill="freeze"/>
+    </rect>
+    
+    <circle cx="103" cy="186" r="3" fill="#48bb78"/>
+    <circle cx="186" cy="186" r="3" fill="#ed8936"/>
+    <circle cx="269" cy="186" r="3" fill="#1976d2"/>
+    <text x="290" y="190" fill="rgba(255,255,255,0.8)" font-family="Arial, sans-serif" font-size="10">3 difficultés</text>
+    
+    <!-- Progress item 3: Attributs -->
+    <text x="20" y="230" fill="white" font-family="Arial, sans-serif" font-size="12">Attributs & État</text>
+    <rect x="20" y="240" width="250" height="12" rx="6" fill="rgba(255,255,255,0.2)"/>
+    <rect x="20" y="240" width="250" height="12" rx="6" fill="url(#progressBlue)">
+      <animate attributeName="width" values="0;250" dur="2s" begin="0.6s" fill="freeze"/>
+    </rect>
+    
+    <circle cx="103" cy="246" r="3" fill="#48bb78"/>
+    <circle cx="186" cy="246" r="3" fill="#ed8936"/>
+    <circle cx="269" cy="246" r="3" fill="#1976d2"/>
+    <text x="290" y="250" fill="rgba(255,255,255,0.8)" font-family="Arial, sans-serif" font-size="10">3 difficultés</text>
+    
+    <!-- Progress item 4: Méthodes -->
+    <text x="20" y="290" fill="white" font-family="Arial, sans-serif" font-size="12">Méthodes</text>
+    <rect x="20" y="300" width="250" height="12" rx="6" fill="rgba(255,255,255,0.2)"/>
+    <rect x="20" y="300" width="250" height="12" rx="6" fill="url(#progressBlue)">
+      <animate attributeName="width" values="0;250" dur="2s" begin="0.9s" fill="freeze"/>
+    </rect>
+    
+    <circle cx="103" cy="306" r="3" fill="#48bb78"/>
+    <circle cx="186" cy="306" r="3" fill="#ed8936"/>
+    <circle cx="269" cy="306" r="3" fill="#1976d2"/>
+    <text x="290" y="310" fill="rgba(255,255,255,0.8)" font-family="Arial, sans-serif" font-size="10">3 difficultés</text>
+    
+    <!-- Progress item 5: Héritage -->
+    <text x="20" y="350" fill="white" font-family="Arial, sans-serif" font-size="12">Héritage</text>
+    <rect x="20" y="360" width="250" height="12" rx="6" fill="rgba(255,255,255,0.2)"/>
+    <rect x="20" y="360" width="250" height="12" rx="6" fill="url(#progressBlue)">
+      <animate attributeName="width" values="0;250" dur="2s" begin="1.2s" fill="freeze"/>
+    </rect>
+    
+    <circle cx="103" cy="366" r="3" fill="#48bb78"/>
+    <circle cx="186" cy="366" r="3" fill="#ed8936"/>
+    <circle cx="269" cy="366" r="3" fill="#1976d2"/>
+    <text x="290" y="370" fill="rgba(255,255,255,0.8)" font-family="Arial, sans-serif" font-size="10">3 difficultés</text>
+    
+    <!-- Progress item 6: Polymorphisme -->
+    <text x="20" y="410" fill="white" font-family="Arial, sans-serif" font-size="12">Polymorphisme</text>
+    <rect x="20" y="420" width="250" height="12" rx="6" fill="rgba(255,255,255,0.2)"/>
+    <rect x="20" y="420" width="250" height="12" rx="6" fill="url(#progressBlue)">
+      <animate attributeName="width" values="0;250" dur="2s" begin="1.5s" fill="freeze"/>
+    </rect>
+    
+    <circle cx="103" cy="426" r="3" fill="#48bb78"/>
+    <circle cx="186" cy="426" r="3" fill="#ed8936"/>
+    <circle cx="269" cy="426" r="3" fill="#1976d2"/>
+    <text x="290" y="430" fill="rgba(255,255,255,0.8)" font-family="Arial, sans-serif" font-size="10">3 difficultés</text>
+    
+    <!-- Card 2: Concepts Intermédiaires -->
+    <rect x="380" y="0" width="340" height="480" rx="10" fill="url(#cardGradient)" filter="url(#shadow)"/>
+    <text x="550" y="40" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="18" font-weight="bold">🔗 Concepts Intermédiaires</text>
+    <text x="550" y="65" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-family="Arial, sans-serif" font-size="11">Questions adaptées selon le niveau sélectionné</text>
+    
+    <!-- Progress item 1: Encapsulation -->
+    <text x="400" y="110" fill="white" font-family="Arial, sans-serif" font-size="12">Encapsulation</text>
+    <rect x="400" y="120" width="250" height="12" rx="6" fill="rgba(255,255,255,0.2)"/>
+    <rect x="400" y="120" width="167" height="12" rx="6" fill="url(#progressOrange)">
+      <animate attributeName="width" values="0;167" dur="2s" begin="2s" fill="freeze"/>
+    </rect>
+    
+    <circle cx="483" cy="126" r="3" fill="rgba(255,255,255,0.3)"/>
+    <text x="483" y="130" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-family="Arial, sans-serif" font-size="8">❌</text>
+    
+    <circle cx="566" cy="126" r="3" fill="#ed8936"/>
+    <text x="566" y="130" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="8">⭐⭐</text>
+    
+    <circle cx="649" cy="126" r="3" fill="#1976d2"/>
+    <text x="649" y="130" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="8">⭐⭐⭐</text>
+    
+    <text x="670" y="130" fill="rgba(255,255,255,0.8)" font-family="Arial, sans-serif" font-size="10">Niv. 2-3</text>
+    
+    <!-- Progress item 2: Méthodes Spéciales -->
+    <text x="400" y="170" fill="white" font-family="Arial, sans-serif" font-size="12">Méthodes Spéciales</text>
+    <rect x="400" y="180" width="250" height="12" rx="6" fill="rgba(255,255,255,0.2)"/>
+    <rect x="400" y="180" width="167" height="12" rx="6" fill="url(#progressOrange)">
+      <animate attributeName="width" values="0;167" dur="2s" begin="2.3s" fill="freeze"/>
+    </rect>
+    
+    <circle cx="483" cy="186" r="3" fill="rgba(255,255,255,0.3)"/>
+    <circle cx="566" cy="186" r="3" fill="#ed8936"/>
+    <circle cx="649" cy="186" r="3" fill="#1976d2"/>
+    <text x="670" y="190" fill="rgba(255,255,255,0.8)" font-family="Arial, sans-serif" font-size="10">Niv. 2-3</text>
+    
+    <!-- Progress item 3: Properties -->
+    <text x="400" y="230" fill="white" font-family="Arial, sans-serif" font-size="12">Properties</text>
+    <rect x="400" y="240" width="250" height="12" rx="6" fill="rgba(255,255,255,0.2)"/>
+    <rect x="400" y="240" width="167" height="12" rx="6" fill="url(#progressOrange)">
+      <animate attributeName="width" values="0;167" dur="2s" begin="2.6s" fill="freeze"/>
+    </rect>
+    
+    <circle cx="483" cy="246" r="3" fill="rgba(255,255,255,0.3)"/>
+    <circle cx="566" cy="246" r="3" fill="#ed8936"/>
+    <circle cx="649" cy="246" r="3" fill="#1976d2"/>
+    <text x="670" y="250" fill="rgba(255,255,255,0.8)" font-family="Arial, sans-serif" font-size="10">Niv. 2-3</text>
+    
+    <!-- Progress item 4: Gestion d'Erreurs -->
+    <text x="400" y="290" fill="white" font-family="Arial, sans-serif" font-size="12">Gestion d'Erreurs</text>
+    <rect x="400" y="300" width="250" height="12" rx="6" fill="rgba(255,255,255,0.2)"/>
+    <rect x="400" y="300" width="167" height="12" rx="6" fill="url(#progressOrange)">
+      <animate attributeName="width" values="0;167" dur="2s" begin="2.9s" fill="freeze"/>
+    </rect>
+    
+    <circle cx="483" cy="306" r="3" fill="rgba(255,255,255,0.3)"/>
+    <circle cx="566" cy="306" r="3" fill="#ed8936"/>
+    <circle cx="649" cy="306" r="3" fill="#1976d2"/>
+    <text x="670" y="310" fill="rgba(255,255,255,0.8)" font-family="Arial, sans-serif" font-size="10">Niv. 2-3</text>
+    
+    <!-- Progress item 5: Documentation -->
+    <text x="400" y="350" fill="white" font-family="Arial, sans-serif" font-size="12">Documentation</text>
+    <rect x="400" y="360" width="250" height="12" rx="6" fill="rgba(255,255,255,0.2)"/>
+    <rect x="400" y="360" width="167" height="12" rx="6" fill="url(#progressOrange)">
+      <animate attributeName="width" values="0;167" dur="2s" begin="3.2s" fill="freeze"/>
+    </rect>
+    
+    <circle cx="483" cy="366" r="3" fill="rgba(255,255,255,0.3)"/>
+    <circle cx="566" cy="366" r="3" fill="#48bb78"/>
+    <circle cx="649" cy="366" r="3" fill="#1976d2"/>
+    <text x="670" y="370" fill="rgba(255,255,255,0.8)" font-family="Arial, sans-serif" font-size="10">Niv. 2-3</text>
+    
+    <!-- Card 3: Concepts Professionnels -->
+    <rect x="760" y="0" width="340" height="480" rx="10" fill="url(#cardGradient)" filter="url(#shadow)"/>
+    <text x="930" y="40" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="18" font-weight="bold">🚀 Concepts Professionnels</text>
+    <text x="930" y="65" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-family="Arial, sans-serif" font-size="11">Exclusifs au scénario BTS SLAM avec exigences maximales</text>
+    
+    <!-- Progress item 1: Design Patterns -->
+    <text x="780" y="110" fill="white" font-family="Arial, sans-serif" font-size="12">Design Patterns</text>
+    <rect x="780" y="120" width="250" height="12" rx="6" fill="rgba(255,255,255,0.2)"/>
+    <rect x="780" y="120" width="250" height="12" rx="6" fill="url(#progressPurple)">
+      <animate attributeName="width" values="0;250" dur="2s" begin="3.5s" fill="freeze"/>
+    </rect>
+    
+    <circle cx="863" cy="126" r="3" fill="rgba(255,255,255,0.3)"/>
+    <circle cx="946" cy="126" r="3" fill="rgba(255,255,255,0.3)"/>
+    <circle cx="1029" cy="126" r="3" fill="#7c3aed"/>
+    <text x="1029" y="130" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="8">🏢</text>
+    <text x="1050" y="130" fill="rgba(255,255,255,0.8)" font-family="Arial, sans-serif" font-size="10">BTS seulement</text>
+    
+    <!-- Progress item 2: Tests Unitaires -->
+    <text x="780" y="170" fill="white" font-family="Arial, sans-serif" font-size="12">Tests Unitaires</text>
+    <rect x="780" y="180" width="250" height="12" rx="6" fill="rgba(255,255,255,0.2)"/>
+    <rect x="780" y="180" width="250" height="12" rx="6" fill="url(#progressPurple)">
+      <animate attributeName="width" values="0;250" dur="2s" begin="3.8s" fill="freeze"/>
+    </rect>
+    
+    <circle cx="863" cy="186" r="3" fill="rgba(255,255,255,0.3)"/>
+    <circle cx="946" cy="186" r="3" fill="rgba(255,255,255,0.3)"/>
+    <circle cx="1029" cy="186" r="3" fill="#7c3aed"/>
+    <text x="1050" y="190" fill="rgba(255,255,255,0.8)" font-family="Arial, sans-serif" font-size="10">BTS seulement</text>
+    
+    <!-- Progress item 3: Architecture Métier -->
+    <text x="780" y="230" fill="white" font-family="Arial, sans-serif" font-size="12">Architecture Métier</text>
+    <rect x="780" y="240" width="250" height="12" rx="6" fill="rgba(255,255,255,0.2)"/>
+    <rect x="780" y="240" width="250" height="12" rx="6" fill="url(#progressPurple)">
+      <animate attributeName="width" values="0;250" dur="2s" begin="4.1s" fill="freeze"/>
+    </rect>
+    
+    <circle cx="863" cy="246" r="3" fill="rgba(255,255,255,0.3)"/>
+    <circle cx="946" cy="246" r="3" fill="rgba(255,255,255,0.3)"/>
+    <circle cx="1029" cy="246" r="3" fill="#7c3aed"/>
+    <text x="1050" y="250" fill="rgba(255,255,255,0.8)" font-family="Arial, sans-serif" font-size="10">BTS seulement</text>
+    
+    <!-- Progress item 4: Interfaces ABC -->
+    <text x="780" y="290" fill="white" font-family="Arial, sans-serif" font-size="12">Interfaces ABC</text>
+    <rect x="780" y="300" width="250" height="12" rx="6" fill="rgba(255,255,255,0.2)"/>
+    <rect x="780" y="300" width="250" height="12" rx="6" fill="url(#progressPurple)">
+      <animate attributeName="width" values="0;250" dur="2s" begin="4.4s" fill="freeze"/>
+    </rect>
+    
+    <circle cx="863" cy="306" r="3" fill="rgba(255,255,255,0.3)"/>
+    <circle cx="946" cy="306" r="3" fill="rgba(255,255,255,0.3)"/>
+    <circle cx="1029" cy="306" r="3" fill="#7c3aed"/>
+    <text x="1050" y="310" fill="rgba(255,255,255,0.8)" font-family="Arial, sans-serif" font-size="10">BTS seulement</text>
+    
+  </g>
+  
+  <!-- Explanation section at bottom -->
+  <rect x="80" y="670" width="1040" height="80" rx="10" fill="rgba(255,255,255,0.1)" filter="url(#shadow)"/>
+  <text x="120" y="695" fill="white" font-family="Arial, sans-serif" font-size="16" font-weight="bold">🎯 Adaptation des questions selon le niveau</text>
+  
+  <!-- Difficulty explanations -->
+  <g transform="translate(120, 710)">
+    <circle cx="15" cy="10" r="8" fill="#38b2ac"/>
+    <text x="15" y="14" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10">⭐</text>
+    <text x="35" y="14" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold">Niveau 1 - Découverte</text>
+    <text x="35" y="28" fill="rgba(255,255,255,0.8)" font-family="Arial, sans-serif" font-size="10">Questions simples, syntaxe basique, concepts fondamentaux</text>
+    
+    <circle cx="280" cy="10" r="8" fill="#ed8936"/>
+    <text x="280" y="14" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10">⭐⭐</text>
+    <text x="300" y="14" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold">Niveau 2 - Maîtrise</text>
+    <text x="300" y="28" fill="rgba(255,255,255,0.8)" font-family="Arial, sans-serif" font-size="10">Validation, logique métier, bonnes pratiques Python</text>
+    
+    <circle cx="550" cy="10" r="8" fill="#1976d2"/>
+    <text x="550" y="14" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="8">⭐⭐⭐</text>
+    <text x="570" y="14" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold">Niveau 3 - Expertise</text>
+    <text x="570" y="28" fill="rgba(255,255,255,0.8)" font-family="Arial, sans-serif" font-size="10">Architecture, robustesse, patterns avancés</text>
+    
+    <circle cx="780" cy="10" r="8" fill="#7c3aed"/>
+    <text x="780" y="14" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10">🏢</text>
+    <text x="800" y="14" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold">Niveau Pro - BTS</text>
+    <text x="800" y="28" fill="rgba(255,255,255,0.8)" font-family="Arial, sans-serif" font-size="10">Standards professionnels, documentation, tests</text>
+  </g>
+  
+  <!-- Animated title emphasis -->
+  <text x="600" y="50" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="28" font-weight="bold" filter="url(#glow)">
+    📈 Progression avec 3 niveaux de difficulté
+    <animate attributeName="opacity" values="1;0.7;1" dur="3s" repeatCount="indefinite"/>
+  </text>
+  
+</svg>

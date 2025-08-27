@@ -187,5 +187,13 @@
   <text x="310" y="660" fill="#4a5568" font-family="Arial, sans-serif" font-size="12">Niveau 2 - Maîtrise</text>
   
   <text x="480" y="660" fill="#1976d2" font-size="14">🏢</text>
-  <text x="500" y="660" fill="#4a5568" font-family="Arial, sans-
+  <text x="500" y="660" fill="#4a5568" font-family="Arial, sans-serif" font-size="12">Scénario Professionnel</text>
   
+  <text x="700" y="660" fill="#a0aec0" font-size="14">❌</text>
+  <text x="720" y="660" fill="#4a5568" font-family="Arial, sans-serif" font-size="12">Non abordé à ce niveau</text>
+  
+  <!-- Hover indicator on Classes et Objets row -->
+  <rect x="50" y="160" width="1100" height="70" fill="rgba(102, 126, 234, 0.05)" rx="5">
+    <animate attributeName="fill-opacity" values="0;0.1;0" dur="3s" repeatCount="indefinite"/>
+  </rect>
+</svg>

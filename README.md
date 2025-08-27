@@ -11,30 +11,23 @@
 
 ## 🗂️ Sommaire
 
-- [Aperçu du cours](#aperçu-du-cours)
-- [Ce qui rend ce cours unique](#ce-qui-rend-ce-cours-unique)
-- [Fonctionnalités principales](#fonctionnalités-principales)
-- [Parcours d'apprentissage](#parcours-dapprentissage)
-- [Démonstration visuelle](#démonstration-visuelle)
-- [Démarrage rapide](#démarrage-rapide)
+- [🚀 Accéder au cours en ligne](#-accéder-au-cours-en-ligne)
+- [🐍 Cours POO Python Adaptatif](#-cours-poo-python-adaptatif)
+  - [🗂️ Sommaire](#️-sommaire)
+  - [🎯 Ce qui rend ce cours unique](#-ce-qui-rend-ce-cours-unique)
+  - [✨ Fonctionnalités principales](#-fonctionnalités-principales)
+    - [🧠 Système d'apprentissage adaptatif](#-système-dapprentissage-adaptatif)
+    - [🎮 Expérience interactive](#-expérience-interactive)
+    - [📱 Interface moderne](#-interface-moderne)
+  - [🎓 Parcours d'apprentissage](#-parcours-dapprentissage)
+    - [🌱 Niveau Débutant (45 min)](#-niveau-débutant-45-min)
+    - [🚀 Niveau Intermédiaire (75 min)](#-niveau-intermédiaire-75-min)
+    - [🎓 Niveau Avancé BTS SLAM (120 min)](#-niveau-avancé-bts-slam-120-min)
+  - [🖼️ Démonstration visuelle](#️-démonstration-visuelle)
+  - [🚀 Démarrage rapide](#-démarrage-rapide)
 
 ---
 
-## 🎨 Aperçu du cours
-
-### Sélection de niveau adaptatif
-![Sélection niveau](selection-niveau.svg)
-
-### Tableau interactif des concepts
-![Tableau concepts](tableau-concepts.svg)
-
-### Exercices avec validation temps réel
-![Exercice interactif](exercice-interactif.svg)
-
-### Progression adaptative par difficulté
-![Barres progression](barres-progression.svg)
-
----
 
 
 > **Cours interactif de Programmation Orientée Objet Python avec adaptation intelligente de la difficulté**

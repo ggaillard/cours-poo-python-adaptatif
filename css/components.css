@@ -1,0 +1,141 @@
+/* =========================
+   🧩 components.css — Styles des composants spécialisés
+   ========================= */
+
+/* Cartes de niveau */
+.level-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  padding: 1.5em 1em;
+  margin: 1em 0;
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+  position: relative;
+}
+.level-card:hover {
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 6px 24px rgba(45,108,223,0.13);
+}
+.level-card .badge {
+  position: absolute;
+  top: 1em; right: 1em;
+}
+
+/* Tableau de concepts */
+.concept-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2em 0;
+  background: #f9f9f9;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.concept-table th, .concept-table td {
+  padding: 1em;
+  border-bottom: 1px solid #e0e0e0;
+  text-align: left;
+}
+.concept-table th {
+  background: #eaf1fb;
+  font-weight: 700;
+}
+.concept-row:hover {
+  background: #eaf1fb;
+}
+
+/* Guide de choix */
+.choice-guide {
+  background: #f5f6fa;
+  border-left: 4px solid var(--primary);
+  padding: 1em 1.5em;
+  margin: 1.5em 0;
+  border-radius: 6px;
+}
+
+/* Tooltips et modales */
+.concept-tooltip {
+  position: absolute;
+  z-index: 1000;
+  background: #232a36;
+  color: #fff;
+  padding: 0.8em 1.2em;
+  border-radius: 8px;
+  font-size: 1em;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s;
+}
+.concept-tooltip.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0; left: 0; width: 100vw; height: 100vh;
+  background: rgba(0,0,0,0.6);
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal-content {
+  background: #fff;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 90vw;
+  padding: 2em 1.5em;
+  box-shadow: 0 4px 32px rgba(45,108,223,0.13);
+  position: relative;
+}
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+.modal-close {
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  color: #888;
+  cursor: pointer;
+}
+
+/* Légendes et difficultés */
+.difficulty-legend {
+  display: flex;
+  gap: 1em;
+  margin: 1em 0;
+}
+.difficulty-legend .badge {
+  font-size: 1.1em;
+}
+
+/* Effets de particules */
+.particle {
+  position: fixed;
+  pointer-events: none;
+  z-index: 10001;
+  width: 4px; height: 4px;
+  border-radius: 50%;
+  background: #ffd700;
+  opacity: 0.9;
+}
+
+/* États d'interaction */
+.level-card:active {
+  transform: scale(0.98);
+}
+.level-card[aria-pressed="true"] {
+  outline: 2px solid var(--primary);
+}
+
+/* Accessibilité */
+.level-card[tabindex="0"]:focus,
+.concept-row[tabindex="0"]:focus {
+  outline: 2px solid var(--primary);
+  box-shadow: 0 0 0 2px #eaf1fb;
+}
